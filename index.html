@@ -13,8 +13,15 @@ a{text-decoration:none;color:inherit}
 .wrap{width:min(1120px,92%);margin:auto}
 header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 14px #00000012}
 .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-weight:900;letter-spacing:1px;color:var(--navy);font-size:21px;line-height:1.05}
-.brand span{display:block;color:var(--gold);font-size:11px;letter-spacing:2px;margin-top:5px}
+.brand{font-weight:1000;letter-spacing:.6px;color:var(--navy);font-size:24px;line-height:.98;text-shadow:0 0 .01px var(--navy);-webkit-font-smoothing:antialiased}
+.brand strong{font-weight:1000}
+.brand span{display:block;color:var(--gold);font-size:11px;letter-spacing:2px;margin-top:7px;font-weight:900}
+.es{display:block;margin-top:5px;font-size:.68em;line-height:1.25;font-weight:800;color:#4f6479;letter-spacing:0}
+.kicker .es{font-size:.78em;color:var(--blue);margin-top:4px}
+.btn .es{font-size:.68em;color:inherit;margin-top:2px;font-weight:700}
+h1 .es,h2 .es{font-size:.42em;color:#556b80;margin-top:8px;font-weight:800}
+.card h3 .es{font-size:.72em;color:#5e7184;margin-top:4px}
+.brand .brand-es{color:var(--navy);font-size:9px;letter-spacing:1.2px;margin-top:3px}
 .btn{display:inline-block;padding:14px 23px;border-radius:30px;background:var(--navy);color:#fff;font-weight:800;border:2px solid var(--navy)}
 .hero-img{display:block;width:100%;height:auto}
 .intro{padding:54px 0 36px;background:linear-gradient(180deg,#fff,#f7fbff)}
@@ -50,14 +57,15 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
 .review{background:#fff;border:1px solid #dce8f3;border-radius:18px;padding:24px}
 .stars{font-size:22px;color:#b67b00;letter-spacing:2px}
 @media(max-width:700px){.review-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.brand{font-size:21px}.brand span{font-size:10px}.brand .brand-es{font-size:8px}.nav .btn{font-size:15px;padding:11px 14px}}
 
 </style>
 </head>
 <body>
 <header>
  <div class="wrap nav">
-   <div class="brand">HIGH CALIBER<br>CLEANERS<span>CLEAN SPACES • BETTER LIVES</span></div>
-   <a class="btn" href="tel:8326900205">Call / Book Now</a>
+   <div class="brand"><strong>HIGH CALIBER<br>CLEANERS</strong><span>CLEAN SPACES • BETTER LIVES</span><span class="brand-es">ESPACIOS LIMPIOS • VIDAS MEJORES</span></div>
+   <a class="btn" href="tel:8326900205">Call / Book Now<span class="es">Llame / Reserve Ahora</span></a>
  </div>
 </header>
 
@@ -66,12 +74,12 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
 <main>
 <section class="intro">
  <div class="wrap">
-  <div class="kicker">RESIDENTIAL &amp; COMMERCIAL CLEANING</div>
-  <h1>A Cleaner Space Makes a Brighter Day</h1>
+  <div class="kicker">RESIDENTIAL &amp; COMMERCIAL CLEANING<span class="es">LIMPIEZA RESIDENCIAL Y COMERCIAL</span></div>
+  <h1>A Cleaner Space Makes a Brighter Day<span class="es">Un espacio más limpio hace un día más brillante</span></h1>
   <p class="lead">High Caliber Cleaners delivers dependable professional cleaning for homes and businesses in Houston, Texas. Clean, healthy and welcoming spaces are only a phone call away.</p>
   <div class="actions">
-   <a class="btn" href="tel:8326900205">Book Your Cleaning</a>
-   <a class="btn alt" href="#services">Our Services</a>
+   <a class="btn" href="tel:8326900205">Book Your Cleaning<span class="es">Reserve su limpieza</span></a>
+   <a class="btn alt" href="#services">Our Services<span class="es">Nuestros servicios</span></a>
   </div>
   <div class="trust"><span>✓ Trusted &amp; Insured</span><span>✓ Professional Team</span><span>✓ Satisfaction Focused</span></div>
  </div>
@@ -79,14 +87,14 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
 
 <section id="services">
  <div class="wrap">
-  <h2>Cleaning Services</h2>
+  <h2>Cleaning Services<span class="es">Servicios de limpieza</span></h2>
   <div class="cards">
-   <div class="card"><h3>House Cleaning</h3><p>Professional cleaning to keep your home fresh, comfortable and welcoming.</p></div>
-   <div class="card"><h3>Office Cleaning</h3><p>Reliable cleaning for offices and commercial spaces.</p></div>
-   <div class="card"><h3>Move-In / Move-Out</h3><p>Detailed cleaning to help prepare a property for its next chapter.</p></div>
-   <div class="card"><h3>Deep Cleaning</h3><p>Extra attention for areas that need a more thorough clean.</p></div>
-   <div class="card"><h3>Regular Cleaning</h3><p>Convenient recurring cleaning to help your space stay consistently clean.</p></div>
-   <div class="card"><h3>Residential &amp; Commercial</h3><p>Flexible cleaning solutions for Houston-area homes and businesses.</p></div>
+   <div class="card"><h3>House Cleaning<span class="es">Limpieza de casas</span></h3><p>Professional cleaning to keep your home fresh, comfortable and welcoming.</p></div>
+   <div class="card"><h3>Office Cleaning<span class="es">Limpieza de oficinas</span></h3><p>Reliable cleaning for offices and commercial spaces.</p></div>
+   <div class="card"><h3>Move-In / Move-Out<span class="es">Limpieza de entrada / salida</span></h3><p>Detailed cleaning to help prepare a property for its next chapter.</p></div>
+   <div class="card"><h3>Deep Cleaning<span class="es">Limpieza profunda</span></h3><p>Extra attention for areas that need a more thorough clean.</p></div>
+   <div class="card"><h3>Regular Cleaning<span class="es">Limpieza regular</span></h3><p>Convenient recurring cleaning to help your space stay consistently clean.</p></div>
+   <div class="card"><h3>Residential &amp; Commercial<span class="es">Residencial y comercial</span></h3><p>Flexible cleaning solutions for Houston-area homes and businesses.</p></div>
   </div>
  </div>
 </section>
@@ -96,11 +104,11 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
  <div class="wrap">
   <div class="quote-box">
    <div class="kicker">FAST &amp; EASY</div>
-   <h2>Get a FREE Quote</h2>
+   <h2>Get a FREE Quote<span class="es">Obtenga una cotización gratis</span></h2>
    <p>Ready for a cleaner home or business? Contact High Caliber Cleaners today. Tell us what you need cleaned and we’ll help you take the next step.</p>
    <div class="quote-actions">
-    <a class="btn" href="tel:8326900205">Call for a Free Quote</a>
-    <a class="btn alt" href="mailto:highcalibersco@gmail.com?subject=Free%20Cleaning%20Quote%20Request&body=Hello%20High%20Caliber%20Cleaners%2C%0A%0AI%20would%20like%20a%20free%20cleaning%20quote.%0A%0AName%3A%0APhone%3A%0AType%20of%20cleaning%3A%0APreferred%20date%3A%0AAdditional%20details%3A%0A">Email for a Free Quote</a>
+    <a class="btn" href="tel:8326900205">Call for a Free Quote<span class="es">Llame para una cotización gratis</span></a>
+    <a class="btn alt" href="mailto:highcalibersco@gmail.com?subject=Free%20Cleaning%20Quote%20Request&body=Hello%20High%20Caliber%20Cleaners%2C%0A%0AI%20would%20like%20a%20free%20cleaning%20quote.%0A%0AName%3A%0APhone%3A%0AType%20of%20cleaning%3A%0APreferred%20date%3A%0AAdditional%20details%3A%0A">Email for a Free Quote<span class="es">Envíe un correo para una cotización gratis</span></a>
    </div>
   </div>
  </div>
@@ -109,14 +117,14 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
 <section class="service-area">
  <div class="wrap">
   <div class="kicker">PROFESSIONAL CLEANING</div>
-  <h2>Serving Houston &amp; Beyond</h2>
+  <h2>Serving Houston &amp; Beyond<span class="es">Sirviendo a Houston y áreas cercanas</span></h2>
   <p class="lead" style="margin-left:auto;margin-right:auto">Professional residential and commercial cleaning you can count on.</p>
  </div>
 </section>
 
 <section class="reviews">
  <div class="wrap">
-  <h2>What Our Customers Say</h2>
+  <h2>What Our Customers Say<span class="es">Lo que dicen nuestros clientes</span></h2>
   <div class="review-grid">
    <div class="review"><div class="stars">★★★★★</div><p>“High Caliber Cleaners did an amazing job. Everything was spotless, fresh, and beautifully cleaned. The service was professional and dependable.”</p><strong>— Satisfied Customer</strong></div>
    <div class="review"><div class="stars">★★★★★</div><p>“Very thorough and professional cleaning service. They paid attention to the details and left the entire space looking and feeling wonderful.”</p><strong>— Happy Customer</strong></div>
@@ -127,7 +135,7 @@ footer{padding:24px 0;text-align:center;background:#062d57;color:#fff}
 
 <section class="contact">
  <div class="wrap">
-  <h2>Ready for a Cleaner Space?</h2>
+  <h2>Ready for a Cleaner Space?<span class="es">¿Listo para un espacio más limpio?</span></h2>
   <p>Call High Caliber Cleaners to request your cleaning service.</p>
   <p>Phone: <a href="tel:8326900205">832-690-0205</a><br>
   Email: <a href="mailto:highcalibersco@gmail.com">highcalibersco@gmail.com</a><br>
